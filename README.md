@@ -19,7 +19,7 @@ The problem only seems to happen when updates are pushed by the MDM, updating wi
 High commercial impact: We currently have our APK deployed to over 10,000 devices globally; if the service fails to upgrade 1-in-3-times this means we need to support around a 3rd of our customer base! The application itself will cease functioning and potential loss of earning is significant.
 
 ## Steps to Reproduce
-
+1. Edit the app/build.gradle file to set the signing configuration
 1. Create 2x signed APKs, 1 with version code of `1`, the 2nd with a version code of `2`.
 1. Upload and publish the 1st using the MDM
 1. Once pushed (installed) to a test device, activate the Accessibility Service from the Android settings menu
